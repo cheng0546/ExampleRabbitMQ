@@ -15,7 +15,7 @@ public class EmailSystem {
 
     public static void sendEmail(String user, String email) throws SendMailException {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-        OhMyEmail.config(OhMyEmail.SMTP_QQ(false), "874966054@qq.com", "yenkeaeqclglbbbc");
+        OhMyEmail.config(OhMyEmail.SMTP_QQ(false), "EMAIL", "PASSWORD");
         OhMyEmail.subject("Order confirmation")
                 .from("Shopping RabbitMQ")
                 .to(email)
